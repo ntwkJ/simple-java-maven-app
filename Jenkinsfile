@@ -6,7 +6,9 @@ peline {
         }
     }
     stages {
-        stage('Build') { 
+        stage('Install Tool') {
+	    // code
+	},stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package' 
             }
