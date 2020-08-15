@@ -23,7 +23,7 @@ pipeline {
         }
 	stage('Deliver') { 
             steps {
-                sh './jenkins/scripts/deliver.sh' 
+                sh 'mv target/my-app-1.0-SNAPSHOT.jar /myData' 
             }
         }
     }
